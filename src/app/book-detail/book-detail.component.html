@@ -1,0 +1,13 @@
+<div *ngIf="book">
+
+  <h2>{{book.name | titlecase}} Details</h2>
+  <div><span>ISBN: </span>{{book.id}}</div>
+  <div>
+    <label for="book-name">Book title: </label>
+    <input id="book-name" [(ngModel)]="book.name" placeholder="name">
+    <br><br>
+    <label for="book-author">Book author: </label>
+    <input id="book-author" [(ngModel)]="book.author" placeholder="name">
+  </div>
+
+</div>
