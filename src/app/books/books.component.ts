@@ -8,6 +8,7 @@ import {MessageService} from '../message.service';
   templateUrl: './books.component.html',
   styleUrls: ['./books.component.scss']
 })
+
 export class BooksComponent implements OnInit {
   books: Book[] = [];
   selectedBook: Book;
